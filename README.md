@@ -18,7 +18,7 @@
 
 1. [스프링 IoC 컨테이너와 Bean 소개](src/test/java/ioc/Introduction.java)
 2. [컨테이너 개요](src/test/java/ioc/Container.java)
-3. ~~[Bean 개요](src/test/kotlin/ioc/Bean.kt)~~
+3. [Bean 개요](src/test/java/ioc/Bean.java)
 4. ~~[의존성(Dependencies)](src/test/kotlin/ioc/Dependencies.kt)~~
 5. ~~[Bean 스코프](src/test/kotlin/ioc/BeanScopes.kt)~~
 6. ~~[Bean의 라이프 사이클](src/test/kotlin/ioc/Lifecycle.kt)~~
@@ -26,7 +26,9 @@
 8. ~~[자바 기반 컨테이 구성](src/test/kotlin/ioc/JavaBasedConfiguration.kt)~~
 
 ### 싱글톤 스코프
+
 <img src="docs/images/singleton.png" alt="singleton">
 
 ### 프로토타입 스코프
+
 <img src="docs/images/prototype.png" alt="prototype">

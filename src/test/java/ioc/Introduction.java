@@ -3,7 +3,6 @@ package ioc;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.StaticListableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.StaticApplicationContext;
@@ -95,24 +94,5 @@ class Introduction {
         //applicationContext.containsBean("sampleObject") shouldBe true
         assertThat(applicationContext.containsBean("notBeanObject")).isFalse();
         assertThat(beanObject).isNotEqualTo(notBeanObject);
-    }
-    @Test
-    /**
-     * """
-     * Bean Definition
-     * 빈은 단순 객체로 저장되는게 아닌 Bean Definition 이라는 객체에
-     * 감싸진 후, BeanFactory 에 등록됩니다.
-     * @see <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/config/BeanDefinition.html">BeanDefinition Javadoc</a>
-     * """
-     */
-    void 빈_메타데이터_정의(){
-        final var applicationContext = new StaticApplicationContext();
-
-        applicationContext.registerSingleton("sampleObject", SampleObject.class);
-
-        // beanDefinition 객체는 Bean 의 정보를 담고 있습니다.
-        final BeanDefinition beanDefinition = applicationContext.getBeanDefinition("sampleObject");
-        assertThat(beanDefinition.isSingleton()).isTrue();
-        assertThat(beanDefinition.getBeanClassName()).contains("SampleObject");
     }
 }

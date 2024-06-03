@@ -12,6 +12,10 @@ public class AppConfig {
   public SampleObject sampleObject() {
     return new SampleObject();
   }
+  @Bean
+  public SampleObject sampleObjectWithMethodName() {
+    return new SampleObject();
+  }
 
   @Bean(name = {"firstName", "secondName"})
   public SampleObject sampleAlias() {
@@ -21,5 +25,9 @@ public class AppConfig {
   @Bean
   public SampleFactoryObject sampleFactoryObject() {
     return SampleFactoryObject.create();
+  }
+  @Bean(value = {"valueName"})
+  public SampleObject sampleValue(){
+    return new SampleObject();
   }
 }
