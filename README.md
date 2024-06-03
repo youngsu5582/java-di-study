@@ -16,7 +16,7 @@
 스프링 IoC 컨테이너에 대해 좀 더 자세히 알아봅시다.
 학습 테스트는 ioc 패키지 또는 클래스 단위로 실행하세요.
 
-1. ~~[스프링 IoC 컨테이너와 Bean 소개](src/test/kotlin/ioc/Introduction.kt)~~
+1. [스프링 IoC 컨테이너와 Bean 소개](src/test/java/ioc/Introduction.java)
 2. ~~[컨테이너 개요](src/test/kotlin/ioc/Container.kt)~~
 3. ~~[Bean 개요](src/test/kotlin/ioc/Bean.kt)~~
 4. ~~[의존성(Dependencies)](src/test/kotlin/ioc/Dependencies.kt)~~
