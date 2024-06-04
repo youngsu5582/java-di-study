@@ -21,7 +21,7 @@
 3. [Bean 개요](src/test/java/ioc/Bean.java)
 4. [의존성(Dependencies)](src/test/java/ioc/Dependencies.java)
 5. [Bean 스코프](src/test/java/ioc/BeanScopes.java)
-6. ~~[Bean의 라이프 사이클](src/test/kotlin/ioc/Lifecycle.kt)~~
+6. [Bean의 라이프 사이클](src/test/java/ioc/Lifecycle.java)
 7. ~~[어노테이션 기반 컨테이너 구성](src/test/kotlin/ioc/AnnotationBasedConfiguration.kt)~~
 8. ~~[자바 기반 컨테이 구성](src/test/kotlin/ioc/JavaBasedConfiguration.kt)~~
 
