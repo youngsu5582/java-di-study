@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * 스프링이 제공하는 콜백 인터페이스를 사용하지 않는 경우 일반적으로 init(), destroy(), close() 등의 이름을 가진 메서드를 작성합니다.
  * 라이프 사이클을 위한 콜백 메서드는 프로젝트 전체에서 동일한 이름을 사용하여 일관성을 보장하는 것이 좋습니다.
  *
- *@see <a href="https://github.com/kang-hyungu/di-study/blob/master/src/test/kotlin/ioc/Lifecycle.kt">원문 코드</a>
+ * @see <a href="https://github.com/kang-hyungu/di-study/blob/master/src/test/kotlin/ioc/Lifecycle.kt">원문 코드</a>
  * @see <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/Lifecycle.html">ApplicationContext Javadoc</a>
  */
 @DisplayName("Bean의 라이프 사이클")

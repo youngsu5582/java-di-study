@@ -16,10 +16,14 @@ public class MovieRecommender {
   // @Autowired 대신 @Inject를 사용했습니다.
   // 스프링 4.3부터는 생성자가 하나라면 @Autowired를 생략해도 자동 주입이 가능합니다.
   // @Inject를 주석 처리하고 테스트를 실행하여 정상 동작하는지 확인해보세요.
-  @Inject
+  //  @Inject
   public MovieRecommender(final CustomerPreferenceDao customerPreferenceDao) {
     this.customerPreferenceDao = customerPreferenceDao;
   }
+  // Inject 명시하지 않으면, 기본 생성자로 주입
+  //  public MovieRecommender(){
+  //      this.customerPreferenceDao = null;
+  //  }
 
   public CustomerPreferenceDao getCustomerPreferenceDao() {
     return customerPreferenceDao;

@@ -1,6 +1,6 @@
 package ioc;
 
-import ioc.context.AnnotationConfig;
+import ioc.context.AnnotationConfigForContainer;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -89,7 +89,7 @@ public class Container {
          */
         @Test
         void 자바_어노테이션_기반_생성() {
-            final var applicationContext = new AnnotationConfigApplicationContext(AnnotationConfig.class);
+            final var applicationContext = new AnnotationConfigApplicationContext(AnnotationConfigForContainer.class);
 
             // ApplicationContext에서 SampleObject Bean 객체를 조회합니다.
             final var sampleObject = applicationContext.getBean("sampleObject", SampleObject.class);

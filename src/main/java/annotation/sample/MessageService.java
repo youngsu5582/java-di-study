@@ -1,6 +1,6 @@
 package annotation.sample;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.inject.Inject;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -10,7 +10,7 @@ public class MessageService {
 
   private final Map<String, MessageSender> messageSenders;
 
-  @Autowired
+  @Inject
   public MessageService(final Map<String, MessageSender> messageSenders) {
     this.messageSenders = messageSenders;
   }
